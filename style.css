@@ -1,9 +1,11 @@
 :root {
-  --font: #a9907e;
-  --bg: #f3deba;
-  --paragraf: #474138;
-  --hamburger: #abc4aa;
-  --judul: #1b1916;
+  --bg: #004643;
+  --hero: #e8e4e6;
+  --judul: #fffffe;
+  --p: #abd1c6;
+  --button: #f9bc60;
+  --buttonText: #031010;
+  --footer: #e16162;
 }
 
 * {
@@ -12,11 +14,11 @@
 }
 
 body {
-  background-color: var(--bg);
+  background-color: var(--hero);
 }
 
 .navbar {
-  background-color: crimson;
+  background-color: var(--bg);
   width: 100%;
   height: 3rem;
   z-index: 99;
@@ -29,13 +31,13 @@ body {
 .logo {
   display: flex;
   margin: 20px;
-  color: var(--paragraf);
+  color: var(--judul);
   font-size: 1.4rem;
   font-style: italic;
 }
 
 .logo span {
-  color: var(--hamburger);
+  color: var(--button);
 }
 
 #menu {
@@ -63,7 +65,7 @@ body {
 }
 
 #menu li a:hover {
-  background-color: antiquewhite;
+  background-color: var(--button);
 }
 
 #menuDrop {
@@ -71,7 +73,8 @@ body {
   top: 5;
   list-style-type: none;
   width: 100%;
-  background-color: aqua;
+  background-color: var(--bg);
+  opacity: 0;
 }
 
 #menuDrop li {
@@ -91,12 +94,12 @@ body {
 }
 
 #menuDrop li:hover {
-  background-color: crimson;
+  background-color: var(--button);
 }
 
 #menuDrop a {
   text-decoration: none;
-  color: var(--paragraf)
+  color: var(--buttonText)
 }
 
 .hamburger {
@@ -110,7 +113,7 @@ body {
 
 .hamburger span {
   display: block;
-  background-color: var(--paragraf);
+  background-color: var(--button);
   height: 3px;
   width: 27px;
   border-radius: 2px;
@@ -168,6 +171,7 @@ body {
     -moz-transform: translateY(0);
     -ms-transform: translateY(0);
     -o-transform: translateY(0);
+    opacity: 1;
   }
 }
 
@@ -209,5 +213,6 @@ body {
     -moz-transform: translateY(0);
     -ms-transform: translateY(0);
     -o-transform: translateY(0);
+    opacity: 1;
   }
 }
