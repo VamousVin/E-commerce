@@ -13,7 +13,6 @@
 
 body {
   background-color: var(--bg);
-  overflow-y: hidden;
 }
 
 .navbar {
@@ -69,35 +68,35 @@ body {
 
 #menuDrop {
   position: absolute;
-  width: 100%;
-  height: 23vh;
-  background-color: crimson;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
+  top: 5;
   list-style-type: none;
+  width: 100%;
+  background-color: aqua;
 }
 
-#menuDrop li a {
-  color: var(--paragraf);
+#menuDrop li {
+  margin: 1rem;
+  padding: 0.5rem;
+  text-align: center;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  transition: ease 0.3s;
+  -webkit-transition: ease 0.3s;
+  -moz-transition: ease 0.3s;
+  -ms-transition: ease 0.3s;
+  -o-transition: ease 0.3s;
+}
+
+#menuDrop li:hover {
+  background-color: crimson;
+}
+
+#menuDrop a {
   text-decoration: none;
-  margin: 10px;
-  padding: 10px;
-  border-radius: 7px;
-  -webkit-border-radius: 7px;
-  -moz-border-radius: 7px;
-  -ms-border-radius: 7px;
-  -o-border-radius: 7px;
-  transition: ease-in-out 0.3s;
-  -webkit-transition: ease-in-out 0.3s;
-  -moz-transition: ease-in-out 0.3s;
-  -ms-transition: ease-in-out 0.3s;
-  -o-transition: ease-in-out 0.3s;
-}
-
-#menuDrop li a:hover {
-  background-color: aliceblue;
+  color: var(--paragraf)
 }
 
 .hamburger {
@@ -152,11 +151,11 @@ body {
 
   #menuDrop {
     transform: translateY(-110%);
-    transition: all 1s;
-    -webkit-transition: all 1s;
-    -moz-transition: all 1s;
-    -ms-transition: all 1s;
-    -o-transition: all 1s;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
     -webkit-transform: translateY(-110%);
     -moz-transform: translateY(-110%);
     -ms-transform: translateY(-110%);
@@ -173,6 +172,11 @@ body {
 }
 
 @media screen and (max-width: 480px) {
+  .logo {
+    font-size: 1rem;
+  }
+
+
   .hamburger {
     display: flex;
   }
@@ -183,15 +187,20 @@ body {
 
   #menuDrop {
     transform: translateY(-110%);
-    transition: all 1s;
-    -webkit-transition: all 1s;
-    -moz-transition: all 1s;
-    -ms-transition: all 1s;
-    -o-transition: all 1s;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
     -webkit-transform: translateY(-110%);
     -moz-transform: translateY(-110%);
     -ms-transform: translateY(-110%);
     -o-transform: translateY(-110%);
+  }
+
+  #menuDrop li a {
+    margin: 10px;
+    padding: 10px;
   }
 
   #menuDrop.block {
