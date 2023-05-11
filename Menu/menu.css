@@ -1,0 +1,418 @@
+:root {
+  --bg: #fffffe;
+  --second: #e3f6f5;
+  --judul: #272343;
+  --p: #2d334a;
+  --p2: #bae8e8;
+  --button: #ffd803;
+  --buttonText: #272343;
+  --footer: #e16162;
+}
+
+*,
+body {
+  margin: 0;
+  padding: 0;
+  overflow-y: hidden;
+}
+
+.bg img {
+  position: fixed;
+  aspect-ratio: 16/9;
+  background: url(img/fried-pork-cutlet-curry-with-rice-dark-surface.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  animation: zoomIn 10s infinite;
+  -webkit-animation: zoomIn 60s infinite;
+  z-index: -1;
+}
+
+.bg img::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+  background-color: black;
+}
+
+.overlay {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.5;
+  background-color: black;
+}
+
+.navbar {
+  font-family: "Comme", sans-serif;
+  width: 100%;
+  height: 3rem;
+  z-index: 99;
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+}
+
+.logo {
+  display: flex;
+  margin: 20px;
+
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.logo a {
+  font-style: italic;
+  text-decoration: none;
+  color: var(--bg);
+}
+
+.logo span {
+  color: var(--button);
+}
+
+#menu {
+  display: flex;
+  margin: 20px;
+  font-size: 1rem;
+}
+
+#menu a {
+  text-decoration: none;
+  color: var(--bg);
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  transition: ease 0.3s;
+  -webkit-transition: ease 0.3s;
+  -moz-transition: ease 0.3s;
+  -ms-transition: ease 0.3s;
+  -o-transition: ease 0.3s;
+}
+
+#menu a:hover {
+  background-color: var(--button);
+  color: var(--buttonText);
+}
+
+#menuDrop {
+  position: absolute;
+  top: 5;
+  list-style-type: none;
+  width: 100%;
+  height: 2.5rem;
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#menuDrop a {
+  text-decoration: none;
+  color: var(--bg);
+  margin: 1rem;
+  padding: 0.5rem;
+  text-align: center;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  transition: ease 0.3s;
+  -webkit-transition: ease 0.3s;
+  -moz-transition: ease 0.3s;
+  -ms-transition: ease 0.3s;
+  -o-transition: ease 0.3s;
+}
+
+#menuDrop :hover {
+  background-color: var(--button);
+  color: var(--buttonText);
+}
+
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  height: 15px;
+  justify-content: space-between;
+  cursor: pointer;
+  display: none;
+}
+
+.hamburger span {
+  display: block;
+  background-color: var(--button);
+  height: 3px;
+  width: 27px;
+  border-radius: 2px;
+}
+
+/* Hero */
+
+.hero {
+  display: flex;
+  height: 70vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 40px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.hero h1 {
+  font-style: italic;
+  color: var(--second);
+  font-size: 48px;
+  margin: 0;
+}
+
+.hero h1 span {
+  color: var(--button);
+}
+
+.hero p {
+  color: var(--bg);
+  font-size: 24px;
+  margin-top: 10px;
+}
+
+.hero .btn {
+  display: inline-block;
+  padding: 10px;
+  width: 200px;
+  border: solid 1px var(--button);
+  color: var(--bg);
+  text-decoration: none;
+  font-size: 24px;
+  margin-top: 30px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  transition: ease 0.3s;
+  -webkit-transition: ease 0.3s;
+  -moz-transition: ease 0.3s;
+  -ms-transition: ease 0.3s;
+  -o-transition: ease 0.3s;
+}
+
+.hero .btn:hover {
+  background-color: #b69b06;
+  color: var(--buttonText);
+}
+
+/* Keyframe Background */
+@keyframes zoomIn {
+  0% {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+  }
+}
+
+/* Media Query */
+
+/* Desktop */
+@media screen and (min-width: 769px) {
+  .bg img {
+    width: 100%;
+    height: 100vh;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+  }
+
+  #menuDrop {
+    display: none;
+  }
+
+  #menu {
+    display: flex;
+  }
+}
+
+/* Tablet */
+@media screen and (max-width: 768px) {
+  .bg img {
+    width: 100%;
+    height: 100vh;
+    aspect-ratio: 3/2;
+    object-fit: cover;
+    transform: scale(1);
+    transform-origin: top left;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+  }
+
+  .navbar {
+    height: 2.8rem;
+    margin-top: 10px;
+  }
+
+  .logo a {
+    font-size: 1.8rem;
+  }
+
+  .hamburger {
+    display: flex;
+    margin: 20px;
+  }
+
+  #menu {
+    display: none;
+  }
+
+  #menuDrop {
+    transform: translateY(-110%);
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -webkit-transform: translateY(-110%);
+    -moz-transform: translateY(-110%);
+    -ms-transform: translateY(-110%);
+    -o-transform: translateY(-110%);
+  }
+
+  #menuDrop a {
+    margin: 10px;
+    padding: 10px;
+  }
+
+  #menuDrop.block {
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    opacity: 1;
+  }
+
+  /* Hero */
+  .hero h1 {
+    font-size: 34px;
+  }
+
+  .hero p {
+    font-size: 22px;
+  }
+
+  .hero .btn {
+    font-size: 22px;
+    padding: 10px;
+  }
+}
+
+/* Mobile */
+@media screen and (max-width: 480px) {
+  .bg img {
+    width: 100%;
+    height: 100vh;
+    aspect-ratio: 9/16;
+    object-fit: cover;
+    transform: scale(1);
+    transform-origin: top left;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+  }
+
+  .navbar {
+    height: 2.6rem;
+    margin-top: 5px;
+  }
+
+  .logo a {
+    font-size: 1.6rem;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  #menu {
+    display: none;
+  }
+
+  #menuDrop {
+    font-size: 14px;
+    transform: translateY(-110%);
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -webkit-transform: translateY(-110%);
+    -moz-transform: translateY(-110%);
+    -ms-transform: translateY(-110%);
+    -o-transform: translateY(-110%);
+  }
+
+  #menuDrop a {
+    margin: 3px;
+    padding: 10px;
+  }
+
+  #menuDrop.block {
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    opacity: 1;
+  }
+
+  /* Hero */
+  .hero h1 {
+    font-size: 26px;
+  }
+
+  .hero p {
+    font-size: 20px;
+  }
+
+  .hero .btn {
+    font-size: 20px;
+    padding: 6px;
+  }
+}
