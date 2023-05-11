@@ -166,59 +166,6 @@ body {
 
 /* Hero */
 
-.hero {
-  display: flex;
-  height: 70vh;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 40px;
-  font-family: "Open Sans", sans-serif;
-}
-
-.hero h1 {
-  font-style: italic;
-  color: var(--second);
-  font-size: 48px;
-  margin: 0;
-}
-
-.hero h1 span {
-  color: var(--button);
-}
-
-.hero p {
-  color: var(--bg);
-  font-size: 24px;
-  margin-top: 10px;
-}
-
-.hero .btn {
-  display: inline-block;
-  padding: 10px;
-  width: 200px;
-  border: solid 1px var(--button);
-  color: var(--bg);
-  text-decoration: none;
-  font-size: 24px;
-  margin-top: 30px;
-  border-radius: 10px;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -o-border-radius: 10px;
-  transition: ease 0.3s;
-  -webkit-transition: ease 0.3s;
-  -moz-transition: ease 0.3s;
-  -ms-transition: ease 0.3s;
-  -o-transition: ease 0.3s;
-}
-
-.hero .btn:hover {
-  background-color: #b69b06;
-  color: var(--buttonText);
-}
 
 /* Keyframe Background */
 @keyframes zoomIn {
