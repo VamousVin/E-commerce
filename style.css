@@ -172,9 +172,7 @@
   align-items: center;
   padding: 40px;
   text-align: center;
-  padding-top: 12rem;
-  text-align: center;
-  padding-top: 7rem;
+  margin-top: 10rem;
   font-family: 'Open Sans', sans-serif;
 }
 
@@ -327,7 +325,7 @@
 
   /* Hero */
   .hero {
-    margin-top: 6rem;
+    margin-top: 8rem;
   }
 
   .hero h1 {
@@ -389,19 +387,11 @@
     -moz-transform: translateY(-110%);
     -ms-transform: translateY(-110%);
     -o-transform: translateY(-110%);
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
-    -ms-border-radius: 20px;
-    -o-border-radius: 20px;
   }
 
   #menuDrop a {
     margin: 3px;
     padding: 10px;
-    -webkit-border-radius: 15px;
-    -moz-border-radius: 15px;
-    -ms-border-radius: 15px;
-    -o-border-radius: 15px;
   }
 
   #menuDrop.block {
@@ -416,7 +406,7 @@
   /* Hero */
   .hero {
     justify-content: start;
-    margin-top: 30px;
+    margin-top: 4rem;
   }
 
   .hero h1 {
