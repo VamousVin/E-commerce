@@ -11,3 +11,5 @@ document.body.addEventListener("click", (e) => {
     menu.classList.remove("block");
   }
 });
+
+// Ganti background img
