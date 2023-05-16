@@ -67,10 +67,8 @@
 .logo {
   display: flex;
   margin: 20px;
-
   font-size: 2rem;
   font-weight: 700;
-
 }
 
 .logo a {
@@ -142,10 +140,18 @@
   -o-transition: ease 0.3s;
 }
 
-#menuDrop :hover {
+#menuDrop a img {
+  box-sizing: border-box;
+
+}
+
+#menuDrop a:not(.cart):hover,
+#menuDrop img.cart:hover {
+  /* CSS styling untuk hover */
   background-color: var(--button);
   color: var(--buttonText);
 }
+
 
 .hamburger {
   display: flex;
@@ -175,6 +181,8 @@
   text-align: center;
   padding: 40px;
   font-family: 'Open Sans', sans-serif;
+  animation: slideInLeft 1s ease-out;
+  -webkit-animation: slideInLeft 1s ease-out;
 }
 
 .hero h1 {
@@ -182,16 +190,21 @@
   color: var(--second);
   font-size: 48px;
   margin: 0;
+  animation: slideInLeft 1.3s ease-out;
+  -webkit-animation: slideInLeft 1.3s ease-out;
 }
 
 .hero h1 span {
   color: var(--button);
+
 }
 
 .hero p {
   color: var(--bg);
   font-size: 24px;
   margin-top: 10px;
+  animation: slideInLeft 1.5s ease-out;
+  -webkit-animation: slideInLeft 1.5s ease-out;
 }
 
 
@@ -214,11 +227,24 @@
   -moz-transition: ease 0.3s;
   -ms-transition: ease 0.3s;
   -o-transition: ease 0.3s;
+  animation: slideInLeft 1.7s ease-out;
+  -webkit-animation: slideInLeft 1.7s ease-out;
 }
 
 .hero .btn:hover {
   background-color: #b69b06;
   color: var(--buttonText);
+}
+
+/* Animasi hero */
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100%);
+  }
+
+  to {
+    transform: translateX(0);
+  }
 }
 
 /* Keyframe Background */
@@ -293,6 +319,10 @@
     font-size: 1.8rem;
   }
 
+  .cart {
+    display: none;
+  }
+
   .hamburger {
     display: flex;
     margin: 20px;
@@ -329,20 +359,10 @@
     opacity: 1;
   }
 
-  /* Hero */
-  .hero h1 {
-    font-size: 34px;
-  }
+  /* hero */
 
-  .hero p {
-    font-size: 22px;
-  }
-
-  .hero .btn {
-    font-size: 22px;
-    padding: 10px;
-  }
 }
+
 
 /* Mobile */
 @media screen and (max-width: 480px) {
@@ -365,9 +385,12 @@
   }
 
   .logo a {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
   }
 
+  .cart {
+    display: none;
+  }
 
   .hamburger {
     display: flex;
