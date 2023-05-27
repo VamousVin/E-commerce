@@ -4,6 +4,7 @@ const hamburger = document.querySelector("#hamburger");
 
 hamburger.addEventListener("click", () => {
   menu.classList.toggle("block");
+  console.log("hamburger diklik");
 });
 
 document.body.addEventListener("click", (e) => {

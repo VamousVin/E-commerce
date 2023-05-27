@@ -1,0 +1,38 @@
+:root {
+    --button: #ffd803;
+}
+
+
+.hamburger {
+    display: flex;
+    flex-direction: column;
+    height: 15px;
+    justify-content: space-between;
+    cursor: pointer;
+    display: none;
+}
+
+.hamburger span {
+    display: block;
+    background-color: var(--button);
+    height: 3px;
+    width: 27px;
+    border-radius: 2px;
+}
+
+/* Responsive */
+
+/* Tablet */
+@media screen and (max-width: 768px) {
+    .hamburger {
+        display: flex;
+        margin: 20px;
+    }
+}
+
+/* Mobile */
+@media screen and (max-width: 480px) {
+    .hamburger {
+        display: flex;
+    }
+}
