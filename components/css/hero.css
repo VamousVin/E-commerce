@@ -1,3 +1,14 @@
+:root {
+  --bg: #fffffe;
+  --second: #e3f6f5;
+  --judul: #272343;
+  --p: #2d334a;
+  --p2: #bae8e8;
+  --button: #ffd803;
+  --buttonText: #272343;
+  --footer: #e16162;
+}
+
 .hero {
   position: relative;
   display: flex;
@@ -14,7 +25,7 @@
 
 .hero h1 {
   font-style: italic;
-  color: var(--second);
+  color: var(--bg);
   font-size: 48px;
   animation: slideInLeft 1.3s ease-out;
   -webkit-animation: slideInLeft 1.3s ease-out;
@@ -73,8 +84,28 @@
 
 /* Responsive */
 
+/* Tablet */
+@media screen and (max-width: 768px) {
+  .hero h1 {
+    font-size: 28px;
+  }
+
+  .hero p {
+    font-size: 22px;
+  }
+
+  .btn {
+    padding: 8px;
+    font-size: 22px;
+  }
+}
+
 /* Mobile */
 @media screen and (max-width: 480px) {
+  .hero {
+    height: 80vh;
+  }
+
   .hero h1 {
     font-size: 26px;
   }
@@ -83,7 +114,7 @@
     font-size: 20px;
   }
 
-  .hero .btn {
+  .btn {
     font-size: 20px;
     padding: 6px;
   }

@@ -1,5 +1,43 @@
+:root {
+  --bg: #fffffe;
+  --second: #e3f6f5;
+  --judul: #272343;
+  --p: #2d334a;
+  --p2: #bae8e8;
+  --button: #ffd803;
+  --buttonText: #272343;
+  --footer: #e16162;
+}
+
 #mainMenu {
-  background-color: crimson;
   position: relative;
+  background-color: crimson;
+  display: grid;
+  place-items: center;
   padding: 20px;
+}
+
+.opsiMenu {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.opsiMenu a {
+  font-size: 20px;
+  color: var(--bg);
+  text-decoration: none;
+}
+
+/* Responsive */
+
+/* Tablet */
+@media screen and (max-width: 768px) {
+  .opsiMenu a {
+    font-size: 18px;
+  }
+}
+
+/* Mobile */
+@media screen and (max-width: 480px) {
 }
