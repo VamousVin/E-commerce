@@ -26,7 +26,9 @@ tambah.addEventListener("click", () => {
 });
 
 kurang.addEventListener("click", () => {
-  jumlah -= 1;
+  if (jumlah >= 1) {
+    jumlah -= 1;
+  }
   banyakPesanan.textContent = jumlah;
   console.log("berkurang");
 });
