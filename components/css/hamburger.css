@@ -2,11 +2,18 @@
   --button: #ffd803;
 }
 
+.cart {
+  margin-right: 2.5rem;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+}
+
 .hamburger {
   position: absolute;
   display: flex;
   flex-direction: column;
-  height: 21px;
+  height: 23px;
   justify-content: space-between;
   cursor: pointer;
   display: none;
@@ -34,6 +41,10 @@
 
 /* Tablet */
 @media screen and (max-width: 768px) {
+  .cart {
+    margin-right: 4rem;
+  }
+
   .hamburger {
     display: flex;
     right: 0;
