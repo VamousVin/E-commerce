@@ -1,24 +1,24 @@
 // Dropdown button
-const menu = document.querySelector("#menuDrop");
+const menu = document.querySelector(".menuDrop");
 const hamburger = document.querySelector("#hamburger");
 const x = document.querySelector(".x");
 
 hamburger.addEventListener("click", () => {
-  menu.classList.toggle("block");
+  menu.classList.add("block");
 
   // Hamburger spin
-  hamburger.classList.toggle("spin");
+  hamburger.classList.add("spin");
 
   // Memunculkan X
-  x.classList.toggle("active");
+  x.classList.add("active");
   console.log("hamburger diklik");
 });
 
 // Fungsi Close Button
 x.addEventListener("click", () => {
-  menu.classList.toggle("block");
-  hamburger.classList.toggle("spin");
-  x.classList.toggle("active");
+  menu.classList.remove("block");
+  hamburger.classList.remove("spin");
+  x.classList.remove("active");
 });
 
 document.body.addEventListener("click", (e) => {
