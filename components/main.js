@@ -1,9 +1,24 @@
 // Dropdown button
 const menu = document.querySelector("#menuDrop");
 const hamburger = document.querySelector("#hamburger");
+const x = document.querySelector(".x");
 
 hamburger.addEventListener("click", () => {
   menu.classList.toggle("block");
+
+  // Hamburger spin
+  hamburger.classList.toggle("spin");
+
+  // Memunculkan X
+  x.classList.toggle("active");
+  console.log("hamburger diklik");
+});
+
+// Fungsi Close Button
+x.addEventListener("click", () => {
+  menu.classList.toggle("block");
+  hamburger.classList.toggle("spin");
+  x.classList.toggle("active");
 });
 
 document.body.addEventListener("click", (e) => {
