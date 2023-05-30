@@ -6,7 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Css -->
-    <link rel="stylesheet" href="/Reservasi/reservasi.css" />
+    <link rel="stylesheet" href="./css/navbar.css" />
+    <link rel="stylesheet" href="./css/hero.css" />
+    <link rel="stylesheet" href="./css/background.css" />
+    <link rel="stylesheet" href="./css/hamburger.css" />
+    <link rel="stylesheet" href="./css/menuDrop.css" />
 
     <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -15,22 +19,21 @@
       href="https://fonts.googleapis.com/css2?family=Comme:wght@200;400;700&family=Open+Sans:ital,wght@0,400;1,400;1,500&display=swap"
       rel="stylesheet"
     />
+
+    <!-- icon -->
     <link
       rel="shortcut icon"
-      href="svg/undraw_booking_re_gw4j.svg"
+      href="../svg/undraw_booking_re_gw4j.svg"
       type="image/x-icon"
     />
     <title>Logistik</title>
   </head>
   <body>
     <header>
-      <!-- <div class="bg">
-      <img
-        src="img/fried-pork-cutlet-curry-with-rice-dark-surface.jpg"
-        alt="Background"
-      />
-    </div>
-    <div class="overlay"></div> -->
+      <div class="bg">
+        <img />
+      </div>
+      <div class="overlay"></div>
       <nav class="navbar">
         <div class="logo">
           <a href="#">Logis<span>tik</span></a>
@@ -46,25 +49,42 @@
           <a href="#">About Us</a>
         </div>
 
+        <div class="cart">
+          <img src="../svg/shopping-bag.svg" alt="cart" />
+        </div>
+
         <div id="hamburger" class="hamburger">
           <span></span>
           <span></span>
           <span></span>
         </div>
+        
+        <div class="x">
+          <img src="/svg/x.svg" />
+        </div>
+        
+        <div class="menuDrop">
+          <a href="index.html">Home</a>
+          <a href="#">Reservasi</a>
+          <a
+            href="https://wa.me/+6282322397090?text=Saya%20mau%20reservasi%20min%0AAtas%20nama%20:%20"
+            >Contact</a
+          >
+          <a href="#">About Us</a>
+        </div>
       </nav>
-
-      <div id="menuDrop">
-        <a href="/index.html">Home</a>
-        <a href="Reservasi/reservasi.html">Reservasi</a>
-        <a
-          href="https://wa.me/+6282322397090?text=Saya%20mau%20reservasi%20min%0AAtas%20nama%20:%20"
-          >Contact</a
-        >
-        <a href="#">About Us</a>
-      </div>
     </header>
 
     <!-- Hero -->
+    <div class="hero">
+      <h1>Selamat Datang di Restoran Logis<span>tik</span></h1>
+      <p>
+        Di mana segala cita rasa dan keindahan bersatu dalam satu kesatuan,
+        menanti untuk memanjakan lidah dan hatimu dalam setiap hidangan yang
+        kami sajikan.
+      </p>
+      <a href="#" class="btn">Lihat Menu Kami</a>
+    </div>
 
     <!-- Js -->
     <script src="/main.js"></script>
