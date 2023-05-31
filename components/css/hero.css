@@ -9,13 +9,14 @@
 
 .hero {
   display: flex;
-  height: 90.5vh;
+  height: 100vh;
   background-color: tomato;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
   padding: 40px;
+  box-sizing: border-box;
   font-family: "Open Sans", sans-serif;
   animation: slideInLeft 1s ease-out;
   -webkit-animation: slideInLeft 1s ease-out;
@@ -84,10 +85,6 @@
 
 /* Tablet */
 @media screen and (max-width: 768px) {
-  .hero {
-    height: 92vh;
-  }
-
   .hero h1 {
     font-size: 28px;
   }
@@ -104,10 +101,6 @@
 
 /* Mobile */
 @media screen and (max-width: 480px) {
-  .hero {
-    height: 90.5vh;
-  }
-
   .hero h1 {
     font-size: 26px;
   }
