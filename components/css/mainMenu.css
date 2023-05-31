@@ -11,10 +11,11 @@
 
 #mainMenu {
   position: relative;
-  background-color: crimson;
   display: grid;
   place-items: center;
   padding: 20px;
+  background-color: crimson;
+  opacity: 0.3;
 }
 
 .opsiMenu {
@@ -33,11 +34,12 @@
 
 /* Tablet */
 @media screen and (max-width: 768px) {
+  #mainMenu {}
+
   .opsiMenu a {
     font-size: 18px;
   }
 }
 
 /* Mobile */
-@media screen and (max-width: 480px) {
-}
+@media screen and (max-width: 480px) {}
