@@ -10,8 +10,6 @@
 .hero {
   display: flex;
   height: 100vh;
-  background-color: purple;
-  opacity: 0.3;
   flex-direction: column;
   align-items: center;
   justify-content: center;
