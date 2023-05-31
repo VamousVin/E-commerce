@@ -105,7 +105,7 @@
 /* Mobile */
 @media screen and (max-width: 480px) {
   .hero {
-    height: 80vh;
+    height: 81.3vh;
   }
 
   .hero h1 {
