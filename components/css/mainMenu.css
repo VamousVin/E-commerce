@@ -14,8 +14,6 @@
   display: grid;
   place-items: center;
   padding: 20px;
-  background-color: crimson;
-  opacity: 0.3;
 }
 
 .opsiMenu {
@@ -28,6 +26,16 @@
   font-size: 20px;
   color: var(--bg);
   text-decoration: none;
+}
+
+.pilihanMenu {}
+
+.menu {
+  display: flex;
+}
+
+.menu img {
+  width: 50px;
 }
 
 /* Responsive */
