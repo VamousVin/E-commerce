@@ -9,9 +9,8 @@
 
 .hero {
   display: flex;
-  height: 100vh;
-  background-color: blue;
-  opacity: 0.3;
+  height: 90.5vh;
+  background-color: tomato;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -85,6 +84,10 @@
 
 /* Tablet */
 @media screen and (max-width: 768px) {
+  .hero {
+    height: 92vh;
+  }
+
   .hero h1 {
     font-size: 28px;
   }
@@ -101,6 +104,10 @@
 
 /* Mobile */
 @media screen and (max-width: 480px) {
+  .hero {
+    height: 90.5vh;
+  }
+
   .hero h1 {
     font-size: 26px;
   }

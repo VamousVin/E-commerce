@@ -23,6 +23,8 @@ x.addEventListener("click", () => {
 
 document.body.addEventListener("click", (e) => {
   if (!hamburger.contains(e.target) && !menu.contains(e.target)) {
+    hamburger.classList.remove("spin");
+    x.classList.remove("active");
     menu.classList.remove("block");
   }
 });
