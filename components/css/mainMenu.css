@@ -20,6 +20,8 @@
   width: 100%;
   display: flex;
   justify-content: space-around;
+  background-color: tomato;
+  margin-bottom: 1rem;
 }
 
 .opsiMenu a {
@@ -28,26 +30,51 @@
   text-decoration: none;
 }
 
-.pilihanMenu {}
+.pilihanMenu {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px auto;
+  width: 50rem;
+  background-color: red;
+}
 
 .menu {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 25%;
+  height: 25rem;
+  margin: 0 auto 20px 50px;
+  background-color: crimson;
 }
 
 .menu img {
-  width: 50px;
+  width: 12rem;
+}
+
+.menu p {
+  margin: auto 20px;
+}
+
+.menu button {
+  width: 30px;
+}
+
+.menu div {
+  display: flex;
 }
 
 /* Responsive */
 
 /* Tablet */
 @media screen and (max-width: 768px) {
-  #mainMenu {}
-
   .opsiMenu a {
     font-size: 18px;
   }
 }
 
 /* Mobile */
-@media screen and (max-width: 480px) {}
+@media screen and (max-width: 480px) {
+}

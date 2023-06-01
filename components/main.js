@@ -5,11 +5,7 @@ const x = document.querySelector(".x");
 
 hamburger.addEventListener("click", () => {
   menu.classList.add("block");
-
-  // Hamburger spin
   hamburger.classList.add("spin");
-
-  // Memunculkan X
   x.classList.add("active");
   console.log("hamburger diklik");
 });

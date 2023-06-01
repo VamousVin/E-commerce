@@ -13,7 +13,7 @@
   position: absolute;
   display: flex;
   flex-direction: column;
-  height: 23px;
+  height: 21px;
   justify-content: space-between;
   cursor: pointer;
   display: none;
