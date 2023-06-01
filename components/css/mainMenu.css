@@ -73,8 +73,18 @@
   .opsiMenu a {
     font-size: 18px;
   }
+
+  .pilihanMenu {
+    width: 350rem;
+  }
 }
 
 /* Mobile */
 @media screen and (max-width: 480px) {
+  .pilihanMenu {
+    width: 20rem;
+  }
+  .menu {
+    margin-bottom: 20px;
+  }
 }
