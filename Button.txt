@@ -1,0 +1,74 @@
+tolong perbaiki kode saya agar berfungsi dengan benar
+<div class="menu">
+          <img src="components/img/fried-rice-plate-white-wooden-floor.jpg" />
+          <h1>Nasi Goreng Anjay</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
+            incidunt in minima sed asperiores amet!
+          </p>
+          <div>
+            <button onclick="kurang()">-</button>
+            <p id="banyakPesanan">0</p>
+            <button onclick="tambah()">+</button>
+          </div>
+        </div>
+        <div class="menu">
+          <img src="components/img/fried-rice-plate-white-wooden-floor.jpg" />
+          <h1>Nasi Goreng Anjay</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
+            incidunt in minima sed asperiores amet!
+          </p>
+          <div>
+            <button onclick="kurang()">-</button>
+            <p id="banyakPesanan">0</p>
+            <button onclick="tambah()">+</button>
+          </div>
+        </div>
+        <div class="menu">
+          <img src="components/img/fried-rice-plate-white-wooden-floor.jpg" />
+          <h1>Nasi Goreng Anjay</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
+            incidunt in minima sed asperiores amet!
+          </p>
+          <div>
+            <button onclick="kurang()">-</button>
+            <p id="banyakPesanan">0</p>
+            <button onclick="tambah()">+</button>
+          </div>
+        </div>
+<script>
+let banyakPesanan = document.getElementById("banyakPesanan");
+
+let jumlah = 0;
+
+function tambah() {
+  jumlah += 1;
+  banyakPesanan.textContent = jumlah;
+  console.log("bertambah");
+}
+
+function kurang() {
+  if (jumlah >= 1) {
+    jumlah -= 1;
+  }
+  banyakPesanan.textContent = jumlah;
+  console.log("berkurang");
+}
+</script>
+
+apakah saya harus membuat masing" banyak pesanan pada setiap <p>
+
+Jawaban : Dalam kode ini, saya menggunakan class banyakPesanan pada elemen <p> untuk mengidentifikasi elemen yang menyimpan jumlah pesanan. Dalam setiap fungsi tambah() dan kurang(), saya menggunakan button.parentNode.querySelector(".banyakPesanan") untuk mencari elemen <p> yang berada dalam konteks yang sama dengan tombol yang diklik. Ini memungkinkan kita untuk mengubah isi dari elemen tersebut dengan benar.
+Tentu! Berikut adalah perubahan yang saya lakukan dari kode awal yang Anda berikan:
+
+Menggunakan class: Saya mengubah penggunaan ID menjadi class pada elemen <p> yang menyimpan jumlah pesanan. Dengan menggunakan class, kita dapat menggunakan selektor class untuk mengidentifikasi elemen yang sesuai.
+
+Parameter pada fungsi: Saya menambahkan parameter button pada fungsi tambah() dan kurang(). Parameter ini akan mewakili tombol yang diklik.
+
+Menggunakan parentNode dan querySelector: Saya menggunakan button.parentNode untuk mendapatkan elemen yang merupakan induk langsung dari tombol yang diklik. Kemudian, menggunakan querySelector(".banyakPesanan"), saya mencari elemen dengan class banyakPesanan yang berada di dalam induk tersebut.
+
+Konversi ke integer: Saya menggunakan parseInt() untuk mengubah isi teks pada elemen <p> menjadi nilai integer sebelum melakukan penambahan atau pengurangan.
+
+Dengan perubahan ini, setiap tombol + dan - akan berinteraksi dengan elemen <p> yang berdekatan dengan tombol tersebut. Dengan demikian, Anda dapat mengelola pesanan masing-masing dengan benar.

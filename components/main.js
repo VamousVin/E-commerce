@@ -26,22 +26,38 @@ document.body.addEventListener("click", (e) => {
 });
 
 // Tambah kurang jumlah pesanan
-let tambah = document.getElementById("tambah");
-let kurang = document.getElementById("kurang");
-let banyakPesanan = document.getElementById("banyakPesanan");
-
-let jumlah = 0;
-
-tambah.addEventListener("click", () => {
+function tambah(params) {
+  let banyakPesanan = params.parentNode.querySelector("#banyakPesanan");
+  let jumlah = parseInt(banyakPesanan.textContent);
   jumlah += 1;
   banyakPesanan.textContent = jumlah;
   console.log("bertambah");
-});
+}
 
-kurang.addEventListener("click", () => {
+function kurang(params) {
+  let banyakPesanan = params.parentNode.querySelector("#banyakPesanan");
+  let jumlah = parseInt(banyakPesanan.textContent);
   if (jumlah >= 1) {
     jumlah -= 1;
+    banyakPesanan.textContent = jumlah;
   }
-  banyakPesanan.textContent = jumlah;
   console.log("berkurang");
+}
+
+// Slide Menu
+const makanan = document.querySelector("#makananSlide");
+const minuman = document.querySelector("#minumanSlide");
+const makananMenu = document.querySelector(".pilihanMakanan");
+const minumanMenu = document.querySelector(".pilihanMinuman");
+
+makanan.addEventListener("click", () => {
+  makananMenu.classList.toggle("show");
+  minumanMenu.classList.toggle("show");
+  console.log("Slider berfungsi");
+});
+
+minuman.addEventListener("click", () => {
+  makananMenu.classList.toggle("show");
+  minumanMenu.classList.toggle("show");
+  console.log("Slider berfungsi");
 });
