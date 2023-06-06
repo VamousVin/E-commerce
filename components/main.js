@@ -51,13 +51,13 @@ const makananMenu = document.querySelector(".pilihanMakanan");
 const minumanMenu = document.querySelector(".pilihanMinuman");
 
 makanan.addEventListener("click", () => {
-  makananMenu.classList.toggle("show");
-  minumanMenu.classList.toggle("show");
+  makananMenu.classList.remove("show");
+  minumanMenu.classList.remove("show");
   console.log("Slider berfungsi");
 });
 
 minuman.addEventListener("click", () => {
-  makananMenu.classList.toggle("show");
-  minumanMenu.classList.toggle("show");
+  makananMenu.classList.add("show");
+  minumanMenu.classList.add("show");
   console.log("Slider berfungsi");
 });

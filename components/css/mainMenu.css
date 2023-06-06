@@ -10,10 +10,11 @@
 }
 
 #mainMenu {
-  position: relative;
   display: grid;
   place-items: center;
-  padding: 20px;
+  width: 100%;
+  background-color: yellow;
+  overflow-x: hidden;
 }
 
 .opsiMenu {
@@ -39,16 +40,21 @@
   display: flex;
   flex-wrap: wrap;
   margin: 10px auto;
-  width: 50rem;
-
+  width: 90%;
+  background-color: black;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
 }
 
 .pilihanMakanan.show {
-  transform: translate(-100%);
-  -webkit-transform: translate(-100%);
-  -moz-transform: translate(-100%);
-  -ms-transform: translate(-100%);
-  -o-transform: translate(-100%);
+  transform: translateX(-110%);
+  -webkit-transform: translateX(-110%);
+  -moz-transform: translateX(-110%);
+  -ms-transform: translateX(-110%);
+  -o-transform: translateX(-110%);
 }
 
 .pilihanMinuman {
@@ -56,20 +62,25 @@
   display: flex;
   flex-wrap: wrap;
   margin: 10px auto;
-  width: 50rem;
-  transform: translate(100%, -101%);
-  -webkit-transform: translate(100%, -101%);
-  -moz-transform: translate(100%, -101%);
-  -ms-transform: translate(100%, -101%);
-  -o-transform: translate(100%, -101%);
+  width: 90%;
+  transition: all 0.5s;
+  transform: translate(110%, -101%);
+  -webkit-transform: translate(110%, -101%);
+  -moz-transform: translate(110%, -101%);
+  -ms-transform: translate(110%, -101%);
+  -o-transform: translate(110%, -101%);
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
 }
 
 .pilihanMinuman.show {
-  transform: translate(0);
-  -webkit-transform: translate(0);
-  -moz-transform: translate(0);
-  -ms-transform: translate(0);
-  -o-transform: translate(0);
+  transform: translate(0, -101%);
+  -webkit-transform: translate(0, -101%);
+  -moz-transform: translate(0, -101%);
+  -ms-transform: translate(0, -101%);
+  -o-transform: translate(0, -101%);
 }
 
 .menu {
@@ -78,9 +89,9 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  width: 25%;
+  width: 22.5%;
   height: 28rem;
-  margin: 0 auto 50px 50px;
+  margin: 0 20px 50px 20px;
   background-color: crimson;
 }
 
@@ -117,22 +128,18 @@
 
 /* Tablet */
 @media screen and (max-width: 768px) {
-  .opsiMenu a {
-    font-size: 18px;
-  }
-
-  .pilihanMenu {
-    width: 350rem;
+  .menu {
+    width: 25.5%;
   }
 }
 
 /* Mobile */
 @media screen and (max-width: 480px) {
-  .pilihanMenu {
-    width: 20rem;
+  .menu {
+    width: 80%;
   }
 
-  .menu {
-    margin-bottom: 20px;
+  .pilihanMinuman {
+    margin-top: 10px;
   }
 }
