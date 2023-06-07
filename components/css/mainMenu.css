@@ -10,11 +10,7 @@
 }
 
 #mainMenu {
-  display: grid;
-  place-items: center;
-  width: 100%;
   background-color: yellow;
-  overflow-x: hidden;
 }
 
 .opsiMenu {
@@ -40,7 +36,7 @@
   display: flex;
   flex-wrap: wrap;
   margin: 10px auto;
-  width: 90%;
+  width: 1200px;
   background-color: black;
   transition: all 0.5s;
   -webkit-transition: all 0.5s;
@@ -62,7 +58,7 @@
   display: flex;
   flex-wrap: wrap;
   margin: 10px auto;
-  width: 90%;
+  width: 1200px;
   transition: all 0.5s;
   transform: translate(110%, -101%);
   -webkit-transform: translate(110%, -101%);
@@ -89,9 +85,9 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  width: 22.5%;
+  width: 260px;
   height: 28rem;
-  margin: 0 20px 50px 20px;
+  margin: 20px;
   background-color: crimson;
 }
 
@@ -128,18 +124,40 @@
 
 /* Tablet */
 @media screen and (max-width: 768px) {
+  .pilihanMakanan {
+    width: 600px;
+  }
+
+  .pilihanMinuman {
+    width: 600px;
+    transform: translate(110%, -100.3%);
+  }
+
+  .pilihanMinuman.show {
+    transform: translate(0, -100.3%);
+  }
+
   .menu {
-    width: 25.5%;
+    width: 260px;
   }
 }
 
 /* Mobile */
 @media screen and (max-width: 480px) {
-  .menu {
-    width: 80%;
+  .pilihanMakanan {
+    width: 100%;
   }
 
   .pilihanMinuman {
-    margin-top: 10px;
+    width: 100%;
+    transform: translate(110%, -100.25%);
+  }
+
+  .pilihanMinuman.show {
+    transform: translate(0, -100.25%);
+  }
+
+  .menu {
+    width: 80%;
   }
 }
