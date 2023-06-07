@@ -11,6 +11,7 @@
 
 #mainMenu {
   background-color: yellow;
+  overflow-x: hidden;
 }
 
 .opsiMenu {
@@ -146,10 +147,12 @@
 @media screen and (max-width: 480px) {
   .pilihanMakanan {
     width: 100%;
+    justify-content: center;
   }
 
   .pilihanMinuman {
     width: 100%;
+    justify-content: center;
     transform: translate(110%, -100.25%);
   }
 
