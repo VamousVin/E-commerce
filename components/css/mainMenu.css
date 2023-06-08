@@ -96,8 +96,7 @@
   text-align: center;
   width: 260px;
   height: 25rem;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin: 20px;
   background-color: var(--p);
   padding: 10px;
   box-sizing: border-box;
